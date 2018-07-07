@@ -9,11 +9,19 @@
   gtag('config', 'UA-121893922-1');
 </script>
   <link rel="icon" type="image/ico" href="favicon.ico" />
+      <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        prepareDynamicDates();
+        $(".timeago").timeago();
+
+        $("#prog_date").text(jQuery.timeago(new Date()));
+        $("#prog_string").text(jQuery.timeago("2008-07-17"));
+        $("#prog_element").text(jQuery.timeago("2008-07-20"));
+      });
+
+    </script>
 </head>
- <pre>
-jQuery(document).ready(function() {
-  jQuery("time.timeago").timeago();
-});</pre>
+
 <body style="background-image:url(https://i.imgur.com/7o5AYDX.jpg);background-size:100%">
   
   <center>
