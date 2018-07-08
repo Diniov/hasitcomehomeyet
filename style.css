@@ -1,11 +1,24 @@
 .notyet
 {
-    color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    font-size: 100px;
-    font-family:verdana;
+    	color: white;
+    	text-shadow:
+    	-1px -1px 0 #000,
+    	1px -1px 0 #000,
+    	-1px 1px 0 #000,
+    	1px 1px 0 #000;
+    	font-size: 100px;
+    	font-family:verdana;
+	font-weight:bold;
+}
+.hurt
+{
+    	color: white;
+    	text-shadow:
+    	-1px -1px 0 #000,
+    	1px -1px 0 #000,
+    	-1px 1px 0 #000,
+    	1px 1px 0 #000;
+    	font-size: 25px;
+    	font-family:verdana;
+	font-weight:bold;
 }
