@@ -29,19 +29,48 @@
   <h1>
     <p style="font-family:verdana;color:white;font-size:250px" alt="Has it come home yet?">NOT YET</p>
   </h1>
-    <script src="jquery.min.js"></script>
-    <script src="jquery.timeago.js" type="text/javascript"></script>
-    
-    
-  
 <script>
-function myFunction() {
-    var d = new Date();
-    var n = d.getTime();
-    document.getElementById("demo").innerHTML = n;
+var DateDiff = {
+ 
+    inDays: function(d1, d2) {
+        var t2 = d2.getTime();
+        var t1 = d1.getTime();
+ 
+        return parseInt((t2-t1)/(24*3600*1000));
+    },
+ 
+    inWeeks: function(d1, d2) {
+        var t2 = d2.getTime();
+        var t1 = d1.getTime();
+ 
+        return parseInt((t2-t1)/(24*3600*1000*7));
+    },
+ 
+    inMonths: function(d1, d2) {
+        var d1Y = d1.getFullYear();
+        var d2Y = d2.getFullYear();
+        var d1M = d1.getMonth();
+        var d2M = d2.getMonth();
+ 
+        return (d2M+12*d2Y)-(d1M+12*d1Y);
+    },
+ 
+    inYears: function(d1, d2) {
+        return d2.getFullYear()-d1.getFullYear();
+    }
 }
+ 
+var dString = "January, 25, 1970";
+ 
+var d1 = new Date(dString);
+var d2 = new Date();
+ 
+document.write("<br />It's been "+DateDiff.inYears(d1, d2)+" years / "
+								+DateDiff.inMonths(d1, d2)+" months / "
+                                +DateDiff.inWeeks(d1, d2)+" weeks / "
+								+DateDiff.inDays(d1, d2)+ " days of hurt.");
+
 </script>
-    <p id="demo" class="example" style=color:white>    </p>
 
     
   </center>
