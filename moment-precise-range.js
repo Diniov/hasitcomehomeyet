@@ -73,8 +73,7 @@ if (typeof moment === "undefined" && typeof require === 'function') {
             if (returnValueObject) {
                 return buildValueObject(0, 0, 0, 0, 0, 0, false);
             } else {
-                // return STRINGS.nodiff;
-                return buildValueObject(0, 0, 0, 0, 0, 0, false);
+                return STRINGS.nodiff;
             }
         }
         if (m1.isAfter(m2)) {
