@@ -64,12 +64,12 @@
 		document.write("It's been "+DateDiff.inYears(d1, d2)+" years / "
 			+DateDiff.inMonths(d1, d2)+" months / "
                         +DateDiff.inWeeks(d1, d2)+" weeks / "
-			+DateDiff.inDays(d1, d2)+ " days of hurt.");
+			+DateDiff.inDays(d1, d2)+ " days of hurt. /n");
 	</script>
 		
 	<script>
 		var m1 = moment('2014-01-01 12:00:00','YYYY-MM-DD HH:mm:ss');
-		var m2 = moment('2015-01-01 12:00:00','YYYY-MM-DD HH:mm:ss');
+		var m2 = moment();
 		var diff = moment.preciseDiff(m1, m2);
 		document.write(diff);
 	</script>
