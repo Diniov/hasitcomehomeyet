@@ -41,8 +41,9 @@
 		var m2 = moment();
 		var diff = moment.preciseDiff(m1, m2);
 		document.write("It's been ");
-		setInterval(document.write(diff), 1000);
+		document.write(diff);
 		document.write(" of hurt.");
+		setInterval(diff, 1000);
 	</script>
 		
 	</div>
