@@ -25,11 +25,11 @@
 	
 	<div class="verdict" title="Has it come home yet?">NOT YET</div>
  
-	<div id="demo" title="June 14, 1970" class="hurt"></div>		  
+	<div id="hurtTime" title="June 14, 1970" class="hurt"></div>		  
 	<br />	
 	<script>
-		var myVar = setInterval(hurtme, 1000);
-		function hurtme() {
+		
+		function hurtMe() {
 			var m1 = moment('1970-06-14 16:30:00','YYYY-MM-DD HH:mm:ss');
 			var m2 = moment();
 			var diff = moment.preciseDiff(m1, m2);
@@ -38,6 +38,7 @@
 		//	document.write(diff);
 		//	document.write(" of hurt.");	
 		}
+		var hurtInterval = setInterval(hurtMe, 1000);
 	</script>
 		
 	
