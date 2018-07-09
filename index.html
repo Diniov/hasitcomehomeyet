@@ -28,13 +28,15 @@
 	<div title="June 14, 1970" class="hurt">		  
 	<br />	
 	<script>
+	var hurtrepeat setInterval(hurtme, 1000);
+	function hurtme() {
 		var m1 = moment('1970-06-14 16:30:00','YYYY-MM-DD HH:mm:ss');
 		var m2 = moment();
 		var diff = moment.preciseDiff(m1, m2);
 		document.write("It's been ");
 		document.write(diff);
-		document.write(" of hurt.");
-		setInterval(diff, 1000);
+		document.write(" of hurt.");	
+	}
 	</script>
 		
 	</div>
