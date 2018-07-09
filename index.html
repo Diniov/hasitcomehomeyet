@@ -3,6 +3,7 @@
 	<title>Has it come home yet?</title>
 	<script src="moment.js"></script>
 	<script src="moment-precise-range.js"></script>
+	<script src="readable-range.js"></script>
   	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121893922-1"></script>
 	<script>
@@ -67,12 +68,12 @@
 	</script>
 		
 	<script>
-        	document.write("Today's date is ");
+		var now = moment().format('MMM DD h:mm A');
+		document.write(now);
 	</script>
 	<script src="readable-range.js"></script>
 	</div>
 	  
-
    
 </center>
 </body>
