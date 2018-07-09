@@ -69,11 +69,11 @@
 		
 	<script>
 		var m1 = moment('2014-01-01 12:00:00','YYYY-MM-DD HH:mm:ss');
-		var m2 = moment('2014-02-03 15:04:05','YYYY-MM-DD HH:mm:ss');
-		var diff = moment.duration(m1.diff(m2)).humanize();
+		var m2 = moment();
+		var diff = moment.preciseDiff(m1, m2);
 		document.write(diff);
 	</script>
-	<script src="readable-range.js"></script>
+		
 	</div>
 	  
    
