@@ -28,22 +28,22 @@ if (typeof moment === "undefined" && typeof require === 'function') {
         var result = [];
 
         if (yDiff) {
-            result.push(pluralize(yDiff, 'year'));
+            result.push(pluralize(yDiff, 'year, '));
         }
         if (mDiff) {
-            result.push(pluralize(mDiff, 'month'));
+            result.push(pluralize(mDiff, 'month, '));
         }
         if (dDiff) {
-            result.push(pluralize(dDiff, 'day'));
+            result.push(pluralize(dDiff, 'day, '));
         }
         if (hourDiff) {
-            result.push(pluralize(hourDiff, 'hour'));
+            result.push(pluralize(hourDiff, 'hour, '));
         }
         if (minDiff) {
-            result.push(pluralize(minDiff, 'minute'));
+            result.push(pluralize(minDiff, 'minute, '));
         }
         if (secDiff) {
-            result.push(pluralize(secDiff, 'second'));
+            result.push(pluralize(secDiff, 'second, '));
         }
 
         return result.join(STRINGS.delimiter);
@@ -51,12 +51,12 @@ if (typeof moment === "undefined" && typeof require === 'function') {
 
     function buildValueObject(yDiff, mDiff, dDiff, hourDiff, minDiff, secDiff, firstDateWasLater) {
         return {
-            "years"   : yDiff,
-            "months"  : mDiff,
-            "days"    : dDiff,
-            "hours"   : hourDiff,
-            "minutes" : minDiff,
-            "seconds" : secDiff,
+            "years, "   : yDiff,
+            "months, "  : mDiff,
+            "days, "    : dDiff,
+            "hours, "   : hourDiff,
+            "minutes, and " : minDiff,
+            "seconds, " : secDiff,
             "firstDateWasLater" : firstDateWasLater
         }
     }
