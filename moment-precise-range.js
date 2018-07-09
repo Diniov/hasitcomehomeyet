@@ -13,8 +13,8 @@ if (typeof moment === "undefined" && typeof require === 'function') {
         days: 'days, ',
         hour: 'hour, ',
         hours: 'hours, ',
-        minute: 'minute, and ',
-        minutes: 'minutes, and ',
+        minute: 'minute, ',
+        minutes: 'minutes, ',
         second: 'second',
         seconds: 'seconds',
         delimiter: ' '
@@ -73,7 +73,8 @@ if (typeof moment === "undefined" && typeof require === 'function') {
             if (returnValueObject) {
                 return buildValueObject(0, 0, 0, 0, 0, 0, false);
             } else {
-                return STRINGS.nodiff;
+                // return STRINGS.nodiff;
+                return buildValueObject(0, 0, 0, 0, 0, 0, false);
             }
         }
         if (m1.isAfter(m2)) {
