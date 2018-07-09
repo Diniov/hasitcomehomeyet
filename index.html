@@ -27,6 +27,7 @@
  
 	<div title="June 14, 1970" class="hurt">		  
 	<br />	
+	<p id="demo"></p>
 	<script>
 	var hurtrepeat setInterval(hurtme, 1000);
 	function hurtme() {
@@ -36,6 +37,7 @@
 		document.write("It's been ");
 		document.write(diff);
 		document.write(" of hurt.");	
+		document.getElementById("demo").innerHTML = diff;
 	}
 	</script>
 		
