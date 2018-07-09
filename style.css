@@ -22,3 +22,10 @@
     	font-family:verdana;
 	font-weight:bold;
 }
+.background
+{
+	background-image:url(https://i.imgur.com/7o5AYDX.jpg);
+	background-size:100%;
+	background-color:black;
+	background-repeat:no-repeat;
+}
